@@ -1,2 +1,3 @@
-# wdd-130
-Web Fundamentals 2022
+# WDD-130
+
+Hi, my name is Tyler Schill
