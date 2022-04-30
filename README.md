@@ -1,3 +1,3 @@
-# WDD-130
+W02 Site Planning Assignment
 
-Hi, my name is Tyler Schill
+Tyler Schill
