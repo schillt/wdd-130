@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rochester&display=swap');
 
+nav{
+    background-color: rgb(0, 43, 78);
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 10px ;
+}
+nav a{
+    color: white;
+    font-size: 20px;
+}
 body{
     background-color:rgba(255, 228, 196, .45);
     font-family: 'EB Garamond', serif;
