@@ -53,6 +53,7 @@ article blockquote{
 
 article figcaption cite{
     display: block;
+    font-style: normal;
 }
 .end{
     color: rgb(0, 76, 82);
