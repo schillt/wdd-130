@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rochester&display=swap');
+
+html{
+    color: rgb(0, 0, 0);
+    font-family: "Garamond", sans-serif;
+    font-size: 18px;
+    background-color: azure;
+}
+
 nav{
     background-color: rgb(0, 43, 78);
     padding: 15px;
@@ -8,4 +17,29 @@ nav{
 nav a{
     color: white;
     font-size: 20px;
+}
+
+article{
+    display: block;
+    padding: 5%;
+    text-align: center;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 10px auto;
+    background-color: rgb(220, 236, 236);
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 2px;
+}
+
+h1{
+    font-family: "Garamond", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
 }
