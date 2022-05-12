@@ -19,12 +19,16 @@ nav a{
     font-size: 20px;
 }
 
+nav:hover{
+    background-color: rgb(13, 90, 134);
+}
+
 article{
     display: block;
     padding: 5%;
     text-align: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin: 10px auto;
     background-color: rgb(220, 236, 236);
     border-radius: 5px;
