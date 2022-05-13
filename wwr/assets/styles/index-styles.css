@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
+
+html{
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+}
+
 #content{
     max-width: 1920px;
     min-width: 300px;
@@ -7,6 +14,7 @@
 nav{
     display: flex;
     justify-content: space-around;
+    font-weight:bold;
 }
 
 header img{
@@ -48,7 +56,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: #F1FAEE
+    background-color: #F1FAEE;
 }
 
 #hero{
@@ -70,10 +78,13 @@ header{
     background-color: #1D3557;
     opacity: 95%;
     padding: 50px;
+    font-size: 18px;
 }
 
 #hero-msg h4{
     color: #F1FAEE;
+    font-size: 14px;
+    margin-bottom: 40px;
 }
 
 main .home-grid{
@@ -141,6 +152,8 @@ main section img{
 }
 
 .book, .join{
+    font-family: "Raleway", serif;
+    font-weight: bold;
     padding: 15px 30px;
     border-radius: 2.5px;
     color:#1D3557;
@@ -179,6 +192,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 12px;
 }
 
 .home-title{
