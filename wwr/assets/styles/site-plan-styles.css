@@ -26,7 +26,32 @@ Fonts are separated by a | */
   --nav-hover-link-color: #1D3557;
   --nav-hover-background-color: #A8DADC;
 }
+nav{
+  display: flex;
+  justify-content: space-around;
+}
 
+header img{
+  width:75px;
+  height: auto;
+}
+
+#logo_link{
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+nav a{
+  text-align: center;
+  color: #1D3557;
+  padding: 35px;
+}
+
+nav a:hover{
+  color: white;
+  background-color: #1D3557;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -54,13 +79,13 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
-header {
+.header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+.header > h1, .header > h2 {
   color: var(--headline-color-on-color);
 }
 p {
