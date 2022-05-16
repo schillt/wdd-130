@@ -28,13 +28,11 @@ article{
     display: block;
     padding: 5%;
     text-align: center;
-    max-width: 600px;
-    min-width: 300px;
     margin: 50px auto;
     background-color: rgb(220, 236, 236);
     border-radius: 5px;
-    max-width: 800px;
-    min-width: 250px;
+    max-width: 600px;
+    min-width: 290px;
 }
 
 img{
