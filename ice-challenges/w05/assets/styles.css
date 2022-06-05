@@ -1,42 +1,29 @@
 body{
-    margin: 0px auto;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-nav{
-    background-color: rgb(0, 43, 78);
-    padding: 15px;
-    margin: 0px;
-    text-align: center;
-    margin-bottom: 50px; ;
-
-}
-
-nav a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-nav:hover{
-    background-color: rgb(13, 90, 134);
+#title{
+    height: 450px;
+    flex-basis: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(./images/w05_circles.jpg);
 }
 
-#header{
-    width: 100%;
-
+#title h1{
+    padding: 0 60px;
 }
 
-main{
-    margin: 0 auto;
-    max-width: 1500px;
-    background-color: rgb(100, 100, 100);
-    text-align: center;
+#title h2{
+    padding: 0 60px 60px;
 }
 
-.icons{
-    display: inline-block;
-    max-width: 15%;
-    margin: 5%;
-    border-radius: 50%;
-    border: 10px solid rgb(61, 61, 61);
+.card-holder img{
+    max-width: 100px;
 }
