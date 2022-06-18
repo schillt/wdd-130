@@ -237,7 +237,7 @@ footer .social img{
 
 @media screen and (max-width: 1050px) {
     article{
-        border-radius: 2.5px; ;
+        margin: 20px;
         display: grid;
         grid-template-rows: 200px;
         grid-template-columns: none;
