@@ -55,7 +55,8 @@ nav a:hover{
 body{
     margin: 0;
     padding: 0;
-    background-color: #F1FAEE
+    background-color: #F1FAEE;
+    height: 100%;
 }
 
 header{
