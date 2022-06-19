@@ -11,6 +11,7 @@ html,body{
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
+    overflow-x: hidden;
 }
 h1,h2,h3,h3,h5{
     font-family: 'Inconsolata', monospace;
@@ -19,7 +20,7 @@ h1,h2,h3,h3,h5{
 header{
     z-index: 1;
     height: auto;
-    background-color: #446348;
+    background-color: #D6B172;
     display: block;
     text-align: center;
     justify-content: center;
@@ -33,12 +34,21 @@ nav{
     width: 100%;
 }
 
+.currentPage{
+    border-radius: 5px;
+    background-color: #5f7962;
+    color: white;
+}
+
+
 nav a{
-    font: weight 500px;
+    font-size: 18px ;
+    font-weight: 500px;
     text-decoration: none;
-    padding: 18px 20px;
+    padding: 16px 16px;
     font-family: 'Inconsolata', 'monospace';
-    color:white;
+    color:black;
+    margin: 10px 0 10px 0;
 }
 
 nav a:hover{
@@ -48,7 +58,9 @@ nav a:hover{
 }
 
 .logo{
-    max-height: 65px;
+    margin-top: 10px;
+    max-height: 60px;
+    width: auto;
 }
 
 .logo:hover{
@@ -58,7 +70,6 @@ nav a:hover{
 main{
     display: flex;
     flex-direction: column;
-    margin: 40px;
 }
 .content{
     text-align: center;
@@ -99,6 +110,7 @@ article{
     grid-template-rows: auto auto auto;
     grid-template-columns: none;
     text-align: justify;
+    box-shadow: 1px 1px 3px #4b320746;
 }
 
 article .image{
@@ -117,6 +129,7 @@ article .image{
     opacity: .95;
     grid-column: 1/1;
     grid-row: 2/4;
+    border-radius: 2.5px;
 }
 
 article p{
@@ -125,10 +138,19 @@ article p{
 }
 
 .clientPortfolio{
+    margin: 10px;
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px;
     justify-content: center;
+}
+
+.clientLogo{
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #hunsaker{
@@ -137,9 +159,12 @@ article p{
 }
 
 div .client{
+    height: auto;
     border-radius: 5px;
     background-color:beige;
     padding: 5%;
+    max-width: 500px;
+    box-shadow: 1px 1px 3px #4b320746;
 }
 
 .client:first-of-type{
@@ -148,7 +173,6 @@ div .client{
 
 .client img{
     width: 200px;
-    height: auto;
 }
 
 .client p{
@@ -156,14 +180,23 @@ div .client{
 }
 
 footer{
-    color: white;
+    color: black;
     display: flex;
     flex-direction: row;
-    height: 100px;
-    background-color: #446348;
-    margin:0;
+    background-color: #D6B172;
     justify-content: space-around;
     align-items: center;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+footer .contactInfo{
+    margin: 0px;
+    padding: 10px;
+}
+
+footer h4,h5{
+    font-weight: 100;
 }
 
 @media screen and (min-width: 600px){
@@ -178,15 +211,23 @@ footer{
         margin-left: 20px;
     }
 
+    nav a{
+        margin: 0px 20px;
+    }
+
     .logo{
-        margin-bottom: -4px;
+        margin: 5px 20px;
     }
 
     main{
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content:center;
+    }
+
+    article{
+        margin-right: 2.5%;
     }
 
     .clientPortfolio{
@@ -194,5 +235,9 @@ footer{
         grid-template-rows: none;
         grid-template-columns: auto auto;
         gap: 20px;
+    }
+
+    .client:first-of-type{
+        margin-top: 0px;
     }
 }

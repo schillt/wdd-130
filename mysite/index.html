@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/Source-Code-350.png">
-    <link rel="stylesheet" href="./assets/styles/index-styles.css">
+    <link rel="stylesheet" href="./assets/styles/indexStyles.css">
     <title>Tyler's Technology Services</title>
 </head>
 <header>
@@ -13,13 +13,13 @@
         <img src="./assets/media/MySite Logo.png" alt="logo" class="logo">
     </a>
     <nav>
-       <a href="index.html">Home</a>
-       <a href="index.html">Skills</a>
-       <a href="index.html">Services & Contact</a>
+       <a href="index.html" class="currentPage">Home</a>
+       <a href="skills.html">Skills</a>
+       <a href="contact.html">Contact</a>
     </nav>
 </header>
 <body>
-    <h1>Tyler's Tech Solutions</h1>
+    <h1>Tyler's Tech Services</h1>
     <main class="content">
         <section id="aboutMe">
             <h2>
@@ -48,7 +48,9 @@
             <h2>Who I Have Helped <br> ...and still do!</h2>
             <div class="clientPortfolio">
                 <div class="client">
-                    <img src="./assets/media/home/SHERWOOD PINES LOGO 1.png" alt="client logo">
+                    <div class="clientLogo">
+                        <img src="./assets/media/home/SHERWOOD PINES LOGO 1.png" alt="client logo">
+                    </div>
                     <hr>
                     <p>
                         Sherwood Pines has been one of my greatest success stories. A small memory care facility in Oregon, the COVID-19
@@ -58,9 +60,10 @@
                         achieve success in that are. 
                     </p>
                 </div>
-
                 <div id="hunsaker" class="client">
-                    <img src="./assets/media/home/logo hosizontal.png" alt="client logo">
+                    <div class="clientLogo">
+                        <img src="./assets/media/home/logo hosizontal.png" alt="client logo">
+                    </div>
                     <hr>
                     <p>
                         Hunsaker Home has been another success story. They are a small Adult Foster Care in Oregon who also was affected by the COVID-19
@@ -74,7 +77,14 @@
     </main>
     
     <footer>
-        My Contact Info
+        <div>
+            <h4 class="contactInfo">Contact Info</h4>
+            <h5 class="contactInfo">example@gmail.com</h5>
+            <h5 class="contactInfo">(+1) 123-456-78910</h5>
+        </div>
+        <div>
+            <h4 class="contactInfo"> &copy Tyler's Tech Services</h4>
+        </div>
     </footer>
 </body>
 </html>

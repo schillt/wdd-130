@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Source+Sans+Pro&display=swap');
+
+*, *:before, *:after{
+    box-sizing: border-box; /*take consideration for whole box model*/
+}
+
+html,body{
+    background-color: #edecb413;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+h1,h2,h3,h3,h5{
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    z-index: 1;
+    height: auto;
+    background-color: #D6B172;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.currentPage{
+    border-radius: 5px;
+    background-color: #5f7962;
+    color: white;
+}
+
+
+nav a{
+    font-size: 18px ;
+    font-weight: 500px;
+    text-decoration: none;
+    padding: 16px 16px;
+    font-family: 'Inconsolata', 'monospace';
+    color:black;
+    margin: 10px 0 10px 0;
+}
+
+nav a:hover{
+    border-radius: 5px;
+    background-color: #ABD9B1;
+    color: black;
+}
+
+.logo{
+    margin-top: 10px;
+    max-height: 60px;
+    width: auto;
+}
+
+.logo:hover{
+    opacity: 80%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    text-align: center;
+}
+
+.content h1{
+    max-width: 600px;
+    flex: 1;
+}
+
+.fillContent{
+    width: 100%;
+    align-items: center;
+}
+
+article{
+    justify-content: center;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px 0px 0px;
+}
+
+hr{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width:80%
+}
+
+img{
+    width: 80%;
+    border-radius: 2.5px;
+}
+
+.pBackground{
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+article p{
+    text-align: justify;
+    color: black;
+    padding: 5px;
+}
+
+.button-box{
+    margin-bottom: 40px;
+    padding: 0px;
+    
+}
+.button-box a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #5f7962;
+    border-radius: 2.5px;
+}
+
+.button-box a:hover{
+    border-radius: 5px;
+    background-color: #ABD9B1;
+    color: black;
+}
+
+li{
+    padding: 5px;
+    text-align: justify;
+}
+
+footer{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: #D6B172;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+footer .contactInfo{
+    margin: 0px;
+    padding: 10px;
+}
+
+footer h4,h5{
+    font-weight: 100;
+}
+
+@media screen and (min-width: 600px){
+
+    header{
+        display: flex;
+        justify-content: left;
+    }
+
+    nav{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    nav a{
+        margin: 0px 20px;
+    }
+
+    .logo{
+        margin: 5px 20px;
+    }
+
+    main{
+        align-items: top;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+}
