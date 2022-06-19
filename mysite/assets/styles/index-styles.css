@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Source+Sans+Pro&display=swap');
+
+*, *:before, *:after{
+    box-sizing: border-box; /*take consideration for whole box model*/
+}
+
+html,body{
+    background-color: #edecb413;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1,h2,h3,h3,h5{
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    height: 70px;
+    background-color: #446348;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font: weight 500px;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 26px 10px;
+    font-family: 'Inconsolata', 'monospace';
+    color:white;
+}
+
+nav a:hover{
+    background-color: #ABD9B1;
+    color: black;
+}
+
+.logo{
+    margin-right: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px;
+}
+.content{
+    text-align: center;
+}
+
+.content h1{
+    max-width: 600px;
+    flex: 1;
+}
+
+#aboutMe{
+    display: block;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#profileWrapper{
+    flex: 1;
+}
+
+#profileImage{
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    background-image: url(../media/home/FOTOTY.jpg);
+    background-size:cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.fillContent{
+    width: 100%;
+    align-items: center;
+}
+
+article{
+    justify-content: center;
+    max-width: 600px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: none;
+    text-align: justify;
+}
+
+article .image{
+    height: 100%;
+    background-image: url(../media/home/parker-gibbons-kfwPJieZVwI-unsplash.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    grid-column: 1/1;
+    grid-row: 1/4;
+    filter: blur(1.5px);
+}
+.pBackground{
+    margin: 20px;
+    background-color: #233626;
+    opacity: .95;
+    grid-column: 1/1;
+    grid-row: 2/4;
+}
+
+article p{
+    color: white;
+    padding: 5%;
+}
+
+
+
+.clientPortfolio{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+#hunsaker{
+    background-color: #311f00;
+    color: white;
+}
+
+div .client{
+    border-radius: 5px;
+    background-color:beige;
+    padding: 5%;
+}
+
+.client:first-of-type{
+    margin-top: 20px;
+}
+
+.client img{
+    width: 200px;
+    height: auto;
+}
+
+.client p{
+    text-align: justify;
+}
+
+footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #446348;
+    margin:0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .clientPortfolio{
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+}
