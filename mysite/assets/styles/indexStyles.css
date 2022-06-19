@@ -199,6 +199,11 @@ footer h4,h5{
     font-weight: 100;
 }
 
+footer a{
+    text-decoration: underline;
+    color: black;
+}
+
 @media screen and (min-width: 600px){
 
     header{
