@@ -3,3 +3,5 @@
 <li>need wireframes for desktop design</li>
 
 <li>redesign logo</li>
+
+<li>buttons to other pages in contennt of home page (experience --> skills etc.)</li>
