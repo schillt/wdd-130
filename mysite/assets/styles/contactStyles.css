@@ -113,17 +113,17 @@ li{
     padding-top: 0px;
     text-align: justify;
 }
+
 form{
     display:flex;
     flex-wrap: wrap ;
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    align-items:center;
-    justify-content: space-between;
+    column-gap: 8%;
+    padding: 5px;
+    justify-content:justify;
 }
 
 input{
+   width: 45%;
    border: none; 
    border-radius: 5px;
    padding: 5px;
@@ -153,17 +153,10 @@ button{
 #feedback{
     background-color: #5f7962;
     border-radius: 2.5px;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: .5em;
     color: white;
     box-shadow: 1px 1px 3px black;
-
-}
-
-.moveDown{
-    margin-top: 3em;
+    max-width: 400px;
 }
 
 footer{
