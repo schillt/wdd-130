@@ -50,34 +50,24 @@ body header nav{
     justify-content: right;
     flex-direction: row ;
     align-items: center;
+    align-content: center;
+
 }
 
-body header nav ul{
-    list-style-type: none;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-body header nav ul li{
-    height: 100%;
-    display: flex;
+body header nav a{
+    display:flex;
     align-items: center;
-    justify-content: center;
-}
-
-body header nav ul li:hover{
-    background-color:#004b88;
-}
-
-body header nav ul li a{
-    margin: 0 20px;
+    height: 100%;
+    padding: 30px;
     width:auto;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
 
+body header nav a:hover{
+    background-color: #01467e;
+}
 
 body header nav a img{
     display: inline;
