@@ -25,12 +25,9 @@ body {
 }
 
 body header{
-    height: 85px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row ;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 150px auto;
+    height: auto;
     background-color: #002b4e;
 }
 
@@ -47,15 +44,40 @@ body header div h2{
     margin-left: 30px;
 }
 
-body header nav a{
-    padding: 33px 20px;
-    margin-right: 20px;
-    flex: 1;
-    width:100%;
+body header nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    flex-direction: row ;
+    align-items: center;
+}
+
+body header nav ul{
+    list-style-type: none;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body header nav ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body header nav ul li:hover{
+    background-color:#004b88;
+}
+
+body header nav ul li a{
+    margin: 0 20px;
+    width:auto;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
+
 
 body header nav a img{
     display: inline;
@@ -63,21 +85,17 @@ body header nav a img{
     height: 15px;
 }
 
-body header nav a:hover{
-    background-color: #002b4e;
-}
-
 body main{
     display: grid;
     flex: 1;
-    height: 100%;
-    justify-content: space-evenly;    
+    height: auto;
 }
 
 body main section.links{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
 body main div{
@@ -115,7 +133,6 @@ body main article{
     align-items: center;
     background-color: #b5e4ecce;
     padding: 30px;
-    border-radius: 20px;
 }
 
 body main article div.profileImage{
@@ -145,4 +162,12 @@ body footer h1{
     font-size: 2rem;
     color: white;
     width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    body main article{
+        border-radius: 20px;
+    }
+
+    
 }
