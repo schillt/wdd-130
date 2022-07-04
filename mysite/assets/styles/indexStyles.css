@@ -152,7 +152,7 @@ body main #aboutMe article .pBackground {
 }
 
 body main #aboutMe article p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: lighter;
 	color: var(--textOnDark);
 	padding: 5%;
@@ -176,7 +176,6 @@ body main .clientSlides .clientLogo {
 body main .clientSlides div .client {
 	height: auto;
 	border-radius: 5px;
-	background-color: beige;
 	padding: 5%;
 	max-width: 500px;
 	box-shadow: 1px 1px 3px #4b320746;
@@ -188,13 +187,18 @@ body main .clientSlides div img {
 
 body main .clientSlides div p {
 	text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: lighter;
 }
 
 body main .clientSlides div p a {
 	text-decoration: underline;
 	color: inherit;
+}
+
+body main .clientSlides #sherwood{
+	background-color: #0F3E24;
+	color: var(--textOnDark)
 }
 
 body main .clientSlides #hunsaker {
