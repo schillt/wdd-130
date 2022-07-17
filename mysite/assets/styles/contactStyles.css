@@ -1,72 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Source+Sans+Pro&display=swap');
 
-*, *:before, *:after{
-    box-sizing: border-box; /*take consideration for whole box model*/
+:root {
+	--backgroundColor: #fffffe;
+	--headFootColor: #133633;
+	--headingFont: 'Inconsolata', monospace;
+	--paragraph-font: 'Source Sans Pro', sans-serif;
+	--navLinkColor: #fffffe;
+	--buttonHover: #ABD9B1;
+	--textOnDark: #fff;
+    --textOnLight: #000
 }
 
-html,body{
-    background-color: #edecb413;
-    padding: 0px;
-    margin: 0px;
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
     height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	margin: 0px;
+    font-size: 1.3rem;
     text-align: center;
-    overflow-x: hidden;
-}
-h1,h2,h3,h3,h5{
-    font-family: 'Inconsolata', monospace;
-}
-
-header{
-    z-index: 1;
-    height: auto;
-    background-color: #D6B172;
-    display: block;
-    text-align: center;
-    justify-content: center;
+	background-color: var(--backgroundColor);
+	font-family: var(--paragraph-font);
+	overflow-x: hidden;
 }
 
-nav{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+	font-family: var(--headingFont);
 }
 
-.currentPage{
+body header {
+	height: auto;
+	background-color: var(--headFootColor);
+	display: block;
+	text-align: center;
+}
+
+body header .logo {
+	margin-top: 20px;
+	max-height: 50px;
+	width: auto;
     border-radius: 5px;
-    background-color: #5f7962;
-    color: white;
 }
 
-
-nav a{
-    font-size: 18px ;
-    font-weight: 500px;
-    text-decoration: none;
-    padding: 16px 16px;
-    font-family: 'Inconsolata', 'monospace';
-    color:black;
-    margin: 10px 0 10px 0;
+body header .logo:hover {
+    transform: scale(1.05, 1.05);
+    transition: 2s;
 }
 
-nav a:hover{
+body header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+body header nav a {
+	font-family: var(--headingFont);
+	font-size: 1.8rem;
+	font-weight: lighter;
+	color: var(--navLinkColor);
+	text-decoration: none;
+	padding: 10px;
+	margin: 10px;
+}
+
+body header nav a.currentPage {
     border-radius: 5px;
-    background-color: #ABD9B1;
-    color: black;
+    background-color: var(--buttonHover);
+    color: var(--textOnLight);
 }
 
-.logo{
-    margin-top: 10px;
-    max-height: 60px;
-    width: auto;
+body header nav a:hover {
+    transition: .5s;
+	border-radius: 5px;
+	background-color: var(--buttonHover);
+    color: var(--textOnLight);
 }
-
-.logo:hover{
-    opacity: 80%;
-}
-
 .heroImage{
     margin: 0 auto;
     max-width: 400px;
@@ -78,6 +104,7 @@ nav a:hover{
 }
 
 main{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,11 +131,18 @@ article{
     margin-top: 0px;
 }
 
+article p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 article h1{
     text-align: center;
+    font-size: 2.0rem;
 }
 
 li{
+    font-size: 1.6rem;
     padding: 5px;
     padding-top: 0px;
     text-align: justify;
@@ -151,47 +185,55 @@ button{
 }
 
 #feedback{
-    background-color: #5f7962;
+    background-color: var(--headFootColor);
     border-radius: 2.5px;
     padding: .5em;
-    color: white;
+    color: var(--textOnDark);
     box-shadow: 1px 1px 3px black;
     max-width: 400px;
 }
 
-footer{
-    color: black;
-    display: flex;
-    flex-direction: row;
-    background-color: #D6B172;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-    margin-top: 5%;
+body footer {
+    color: var(--textOnDark);
+	display: flex;
+	background-color: var(--headFootColor);
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+	padding: 15px;
 }
 
-footer .contactInfo{
-    margin: 0px;
-    padding: 10px;
+body footer .contactInfo {
+	margin: 0px;
+	padding: 10px;
+    font-size: 1.4rem;
+    font-weight: lighter;
 }
 
-footer h4,h5{
-    font-weight: 100;
+body footer a {
+	text-decoration: underline;
+	color: var(--navLinkColor);
 }
 
 @media screen and (min-width: 600px){
 
-    header{
+    body header{
+        min-height: 75px;
         display: flex;
+        align-items: center;
         justify-content: left;
     }
 
-    nav{
+    body header .logo{
+        margin: 5px 20px;
+    }
+
+    body header nav{
         width: auto;
         margin-left: 20px;
     }
 
-    nav a{
+    body header nav a{
         margin: 0px 20px;
     }
 

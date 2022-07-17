@@ -207,8 +207,8 @@ body footer a {
 
 @media screen and (min-width: 600px){
 
-    body header{
-        height: 75px;
+	body header{
+        min-height: 75px;
         display: flex;
         align-items: center;
         justify-content: left;
