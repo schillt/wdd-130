@@ -184,13 +184,35 @@ button{
     padding: 5px;
 }
 
-#feedback{
-    background-color: var(--headFootColor);
-    border-radius: 2.5px;
-    padding: .5em;
-    color: var(--textOnDark);
-    box-shadow: 1px 1px 3px black;
+body main section.contactInfo{
+	display: grid;
+	grid-template-rows: auto auto auto;
+    gap: 20px;
     max-width: 400px;
+}
+
+body main section.contactInfo h2{
+    margin: 0px;
+}
+
+body main section.contactInfo div#formBackImage {
+	grid-row: 3/4;
+    max-width: 100%;
+}
+
+body main section.contactInfo div#formBackImage img {
+	max-width: 80%;
+    border-radius: 5px;
+}
+
+body main section.contactInfo div#feedback {
+	grid-row: 2/3;
+	background-color: var(--headFootColor);
+	border-radius: 2.5px;
+	padding: .5em;
+	color: var(--textOnDark);
+	box-shadow: 1px 1px 3px black;
+	max-width: 400px;
 }
 
 body footer {
