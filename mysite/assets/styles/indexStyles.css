@@ -178,7 +178,7 @@ body main .clientSlides div .client {
 	border-radius: 5px;
 	padding: 5%;
 	max-width: 500px;
-	box-shadow: 1px 1px 3px #4b320746;
+	box-shadow: 1px 1px 3px black;
 }
 
 body main .clientSlides div img {
@@ -277,4 +277,14 @@ body footer a {
     body main .clientSlides div .client:first-of-type {
         margin-top: 0px;
     }
+}
+
+@media (prefers-color-scheme: dark){
+	body{
+		background-color: rgb(29, 29, 29);
+		color: white;
+	}
+	body header nav a:hover{
+		color:black;
+	}
 }
